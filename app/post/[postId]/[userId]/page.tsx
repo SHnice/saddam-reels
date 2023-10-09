@@ -75,11 +75,11 @@ export default function Post({ params }: PostPageTypes) {
                         </button>
                     </div>
 
-                    <img 
+                    {/* <img 
                         className="absolute z-20 top-[18px] left-[70px] rounded-full lg:mx-0 mx-auto" 
                         width="45" 
                         src="/images/tiktok-logo-small.png"
-                    />
+                    /> */}
 
                     <ClientOnly>
                         {postById?.video_url ? (
