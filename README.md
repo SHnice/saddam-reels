@@ -1,28 +1,52 @@
-# TikTok Clone NextJs 13 / (tiktok-clone-nextjs)
+                                                                                                
+# NextJs 13 Reels Watching app
+### [Live Site: Saddam Reels](https://saddamreels.vercel.app/)
 
-### Learn how to build this!
+## Technologies
 
-If you'd like a step-by-step guide on how to build this just **CLICK THE IMAGE BELOW**
+Saddam Reels is a full stack NextJS app with popular backend platform app-write.
 
-[![GO TO JOHN WEEKS DEV TUTORIAL VIDEOS](https://github.com/John-Weeks-Dev/tiktok-clone-nextjs/assets/108229029/024e5a4e-a5fe-4dbb-95d1-3686c9b51053)](https://www.youtube.com/watch?v=7zLyVzItZlQ)
+* NextJS
+* App-Write
+* Tailwind CSS
+* TypeScript
+* Zustand
+* React Advanced Cropper
 
-Come and check out my YOUTUBE channel for lots more tutorials -> https://www.youtube.com/@johnweeksdev
+## Description
 
-**LIKE**, **SUBSCRIBE**, and **SMASH THE NOTIFICATION BELL**!!!
+It has following functionalities:
 
-## App Setup (localhost)
+* User SignUp
+* User Login
+* Change Profile
+* Upload videos/reels
+* Adding comments to reels
+* Dynamic search
 
-```
-git clone https://github.com/John-Weeks-Dev/tiktok-clone-nextjs.git
+## Demo Video with CMS
 
-cp .env.example .env
-```
+[](https://github.com/SHnice/saddam-reels/assets/108930470/b55fb2a5-4de7-4c6f-ab22-7778a5ef55b7)
 
-You'll have to set up an AppWrite account, and then add all of the details into your .env file.
+
+## Demo Pictures
+
+<kbd>![image](https://github.com/SHnice/saddam-reels/assets/108930470/f9aa7595-703f-4b74-8fd0-9d88d7db3361)</kbd>
+
+
+<kbd>![image](https://github.com/SHnice/saddam-reels/assets/108930470/09d46c6a-c925-48ba-93ee-0feff6b05961)</kbd>
+
+
+<kbd>![image](https://github.com/SHnice/saddam-reels/assets/108930470/ff1b7c95-fb2f-4059-8955-af66e032291f)</kbd>
+
+
+<kbd>![image](https://github.com/SHnice/saddam-reels/assets/108930470/7d3e0b90-291e-41ad-becf-d9698335e69b)</kbd>
+
+
+<kbd>![image](https://github.com/SHnice/saddam-reels/assets/108930470/51bc0e0e-40f5-486e-a4ef-688407cf1442)</kbd>
+
 
 ## AppWrite Schema
-
-### Database Name: tiktok-clone
 
 ### Profile Collection:
 | Key | Type |
@@ -33,17 +57,6 @@ You'll have to set up an AppWrite account, and then add all of the details into 
 | `user_id` | String |
 | `name` | String |
 
-Profile Indexes:
-| KEY           | TYPE          | ATTRIBUTE     | ASC/DESC      |
-| ------------- | ------------- | ------------- | ------------- |
-| user_id       | key           | user_id       | asc           |
-| name          | fulltext      | name          | asc           |
-
-Profile Settings (Update Permissions):
-| Add Role      | PERMISSIONS   |
-| ------------- | ------------- |
-| All guests    | Read          |
-| All users     | Create, Read, Update, Delete |
 
 ### Post Collection:
 | Key | Type |
@@ -54,16 +67,6 @@ Profile Settings (Update Permissions):
 | `text` | String |
 | `created_at` | String |
     
-Post Indexes:
-| KEY           | TYPE          | ATTRIBUTE     | ASC/DESC      |
-| ------------- | ------------- | ------------- | ------------- |
-| user_id       | key           | user_id       | asc           |
-
-Profile Settings (Update Permissions):
-| Add Role      | PERMISSIONS   |
-| ------------- | ------------- |
-| All guests    | Read          |
-| All users     | Create, Read, Update, Delete |
 
 ### Like Collection:
 | Key | Type |
@@ -72,18 +75,6 @@ Profile Settings (Update Permissions):
 | `user_id` | String |
 | `post_id` | String |
 
-Like Indexes: 
-| KEY           | TYPE          | ATTRIBUTE     | ASC/DESC      |
-| ------------- | ------------- | ------------- | ------------- |
-| user_id       | key           | user_id       | asc           |
-| id            | unique        | id            | asc           |
-| post_id       | key           | post_id       | asc           |
-
-Like Settings (Update Permissions):
-| Add Role      | PERMISSIONS   |
-| ------------- | ------------- |
-| All guests    | Read          |
-| All users     | Create, Read, Update, Delete |
 
 ### Comment Collection:
 | Key | Type |
@@ -94,25 +85,8 @@ Like Settings (Update Permissions):
 | `text` | String |
 | `created_at` | String |
     
-Comment Indexes:
-| KEY           | TYPE          | ATTRIBUTE     | ASC/DESC      |
-| ------------- | ------------- | ------------- | ------------- |
-| post_id       | key           | post_id       | asc           |
-
-Comment Settings (Update Permissions):
-| Add Role      | PERMISSIONS   |
-| ------------- | ------------- |
-| All guests    | Read          |
-| All users     | Create, Read, Update, Delete |
 
 
-Once you've connected your application to AppWrite. Run the commands.
-    
-```
-npm i
 
-npm run dev
-```
 
-You should be good to go! If you need any more help, take a look at the tutorial video by clicking the image above.
 
